@@ -665,14 +665,15 @@ ul#letters-listing li.disabled a {
   box-sizing: border-box;
   text-align: left;
   position: relative;
+  overflow: hidden;
 }
 .poll-candidate-items img {
-  /* max-width: 90px; */
-  max-width: 75px;
+  max-width: 90px;
+  /* max-width: 75px; */
   position: absolute;
   bottom: 0;
   /* left: 12px; */
-  left: 0;
+  left: -11px;
 }
 .poll-candidate-items .cand-info {
   width: 70%;
@@ -683,11 +684,11 @@ ul#letters-listing li.disabled a {
 
 .poll-candidate-items h4 {
   font-family: "Rubik", sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 400;
   margin: 0;
   position: relative;
-  line-height: 13px;
+  line-height: 12px;
 }
 
 .poll-candidate-items h4 span {
@@ -765,8 +766,8 @@ ul#letters-listing li.disabled a {
 }
 .poll-candidate-items .cand-meta li span {
   display: block;
-  font-size: 12px;
-  line-height: 12px;
+  font-size: 10px;
+  line-height: 10px;
   font-weight: 500;
   color: #000;
   margin-top: 5px;
