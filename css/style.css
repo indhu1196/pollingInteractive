@@ -668,8 +668,8 @@ ul#letters-listing li.disabled a {
   overflow: hidden;
 }
 .poll-candidate-items img {
-  max-width: 90px;
-  /* max-width: 75px; */
+  /* max-width: 90px; */
+  max-width: 105px;
   position: absolute;
   bottom: 0;
   /* left: 12px; */
@@ -684,7 +684,7 @@ ul#letters-listing li.disabled a {
 
 .poll-candidate-items h4 {
   font-family: "Rubik", sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   margin: 0;
   position: relative;
@@ -745,10 +745,10 @@ ul#letters-listing li.disabled a {
 }
 .poll-candidate-items .cand-meta li {
   display: inline-block;
-  font-size: 10px;
+  font-size: 12px;
   margin: 0 0 0 0;
   padding: 0 10px 0 0;
-  line-height: 10px;
+  line-height: 12px;
   color: #999;
 }
 .poll-candidate-items hr {
@@ -766,8 +766,8 @@ ul#letters-listing li.disabled a {
 }
 .poll-candidate-items .cand-meta li span {
   display: block;
-  font-size: 10px;
-  line-height: 10px;
+  font-size: 12px;
+  line-height: 12px;
   font-weight: 500;
   color: #000;
   margin-top: 5px;
@@ -939,3 +939,6 @@ ul#letters-listing li.disabled a {
 .owl-controls .owl-buttons div {
   z-index: 2;
 }
+/* #poll-carous2.owl-carousel .owl-item {
+  width: 260px !important;
+} */

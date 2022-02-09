@@ -94,6 +94,20 @@
   }
 }
 @media (min-width: 1000px) {
+  /* .poll-candidate-items img {
+    max-width: 90px;
+  }
+  .poll-candidate-items .cand-meta li span, .poll-candidate-items h4 {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .poll-candidate-items h4 span {
+    font-size: 11px;
+  }
+  .poll-candidate-items .cand-meta li {
+    font-size: 10px;
+    line-height: 10px;
+  } */
   .left-map {
     position: relative;
   }
