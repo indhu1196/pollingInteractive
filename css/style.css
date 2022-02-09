@@ -677,7 +677,8 @@ ul#letters-listing li.disabled a {
 }
 .poll-candidate-items .cand-info {
   width: 70%;
-  margin: 0 0 0 30%;
+  /* margin: 0 0 0 30%; */
+  margin: 0 0 0 32%;
   padding: 10px 10px;
   box-sizing: border-box;
 }
