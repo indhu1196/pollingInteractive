@@ -1,4 +1,7 @@
 @media screen and (max-width: 767px) {
+  .tf_wrap .stFilter {
+    margin-bottom: 15px;
+  }
   .tf_wrap .dash-header {
     /* align-items: flex-start; */
     align-items: center;
