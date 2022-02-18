@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assembly Election Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css">
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body>
+    <div class="tf_wrap pollDash-wrap">
+        <header class="dash-header">
+            <h2 class="poll-mainhead">Assembly Elections 2022</h2>
+            <ul class="nav nav-pills stFilter">
+                <li class="active"><a class="dashfilters active" value="Uttar Pradesh" data="up" data-toggle="pill" href="#up">Uttar Pradesh</a></li>
+                <li><a class="dashfilters" value="Uttarakhand" data="uk" data-toggle="pill" href="#uk">Uttarakhand</a></li>
+                <li><a class="dashfilters" value="Goa" data="ga" data-toggle="pill" href="#ga">Goa</a></li>
+            </ul>
+        </header>
+        <div class="tab-content">
+            <div id="up" class="tab-pane fade in active">
+                <div class="split-cand-total">
+                    <section class="turnout-section">
+                        <h2 class="can-watchh2">Total Voter Turnout</span></h2>
+                        <div class="turnout-items">  
+                            <h3 class="statename"> <span class="turnout_statename"></span> <span class="updatedWrap"> Updated <span class="updatedTime"></span> </span> </h3>
+                            <div class="turnout-content">
+                                <div class="battery-chart turnout-2021">
+                                    <div class="bar"><div class="barlevel" style="background-color: #2A80B9;"></div></div><div class="level" style="color: #2A80B9;"></div></div>
+                                    <div class="split-2"><div>Total electorate <span class="statetotalelectorate"></span></div><div><h4>Turnout 2017</h4><div class="battery-chart turnout-2017"><div class="bar"><div class="barlevel" style="background-color:#F59A13;"></div></div><div class="level"></div></div></div></div></div>
+                        </div>
+                    </section>
+                    <section class="const-carousel">
+                        <h2 class="can-watchh2">Key Candidates</span></h2>
+                        <div id="up-pollcarousel"></div>
+                        <!-- <iframe src="keyCand.html" width="100%" height="250px" scrolling="no" frameborder="0"></iframe> -->
+                    </section>
+                </div>
+            </div>
+            <div id="uk" class="tab-pane fade">
+                <div class="split-cand-total">
+                    <section class="turnout-section">
+                        <h2 class="can-watchh2">Total Voter Turnout</span></h2>
+                        <div class="turnout-items">  
+                            <h3 class="statename"> <span class="turnout_statename"></span> <span class="updatedWrap"> Updated <span class="updatedTime"></span> </span> </h3>
+                            <div class="turnout-content">
+                                <div class="battery-chart turnout-2021">
+                                    <div class="bar"><div class="barlevel" style="background-color: #2A80B9;"></div></div><div class="level" style="color: #2A80B9;"></div></div>
+                                    <div class="split-2"><div>Total electorate <span class="statetotalelectorate"></span></div><div><h4>Turnout 2017</h4><div class="battery-chart turnout-2017"><div class="bar"><div class="barlevel" style="background-color:#F59A13;"></div></div><div class="level"></div></div></div></div></div>
+                        </div>
+                    </section>
+                    <section class="const-carousel">
+                        <h2 class="can-watchh2">Key Candidates</span></h2>
+                        <div id="uk-pollcarousel"></div>
+                        <!-- <iframe src="keyCand.html" width="100%" height="250px" scrolling="no" frameborder="0"></iframe> -->
+                    </section>
+                </div>
+            </div>
+            <div id="ga" class="tab-pane fade">
+                <div class="split-cand-total">
+                    <section class="turnout-section">
+                        <h2 class="can-watchh2">Total Voter Turnout</span></h2>
+                        <div class="turnout-items">  
+                            <h3 class="statename"> <span class="turnout_statename"></span> <span class="updatedWrap"> Updated <span class="updatedTime"></span> </span> </h3>
+                            <div class="turnout-content">
+                                <div class="battery-chart turnout-2021">
+                                    <div class="bar"><div class="barlevel" style="background-color: #2A80B9;"></div></div><div class="level" style="color: #2A80B9;"></div></div>
+                                    <div class="split-2"><div>Total electorate <span class="statetotalelectorate"></span></div><div><h4>Turnout 2017</h4><div class="battery-chart turnout-2017"><div class="bar"><div class="barlevel" style="background-color:#F59A13;"></div></div><div class="level"></div></div></div></div></div>
+                        </div>
+                    </section>
+                    <section class="const-carousel">
+                        <h2 class="can-watchh2">Key Candidates</span></h2>
+                        <div id="ga-pollcarousel"></div>
+                        <!-- <iframe src="keyCand.html" width="100%" height="250px" scrolling="no" frameborder="0"></iframe> -->
+                    </section>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+	<script type="text/javascript">
+	var statename_fixed = 'wb';
+	</script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script type="text/javascript">
+        pollcarouselWidget('keycandidate-data.json', "#up-pollcarousel", "","up")
+        pollcarouselWidget('keycandidate-data.json', "#uk-pollcarousel", "","uk")
+        pollcarouselWidget('keycandidate-data.json', "#ga-pollcarousel", "","ga")
+
+        jQuery(document).ready(function(){
+            var body = document.body, html = document.documentElement;
+
+            var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight)
+            // console.log("Content Height:"+height);
+            pollData("#up", 0);
+            pollData("#uk", 1);
+            pollData("#ga", 2);
+            
+            function pollData(selector, index) {
+                var up_poll = null;
+                var tot_percent = (function () {
+                    $.ajax({
+                    'async': false,
+                    'global': false, 
+                    'url': 'https://script.google.com/macros/s/AKfycbwuZTbrkY9YhXQFu66AAPlHkvvWyk2Z5RY1-4XksuOWahQZsQBg8FoVIhVB_r_K9JKSIg/exec',
+                    'dataType' : 'json',
+                    'success': function (data) {
+                        up_poll = data["content"]["pollingData"];  
+                        console.log(up_poll);                    
+                    }
+                    });
+                    return up_poll;
+                })();
+
+                $(selector + " .turnout_statename").text(up_poll[index]["statename"])
+                $(selector + " .turnout-2021 .barlevel").css("width", up_poll[index]["pollingPercent"]+"%")
+                $(selector + " .turnout-2017 .barlevel").css("width", up_poll[index]["turnout2017"]+"%")
+                $(selector + " .turnout-2021 .level").text(up_poll[index]["pollingPercent"]+"%")
+                $(selector + " .turnout-2017 .level").text(up_poll[index]["turnout2017"]+"%")
+                $(selector + " .statetotalelectorate").text((up_poll[index]["totalelectorate"]).toLocaleString('en-IN'))
+                $(selector + " .updatedTime").text(up_poll[index]["timeUpdated"])
+            }
+        })
+
+        
+function pollcarouselWidget(datasource, selector, filter = '', statename){
+	statename = typeof statename !== 'undefined' ? statename : 'wb';
+	statename_fixed = statename;
+	filter = typeof filter !== 'undefined' ? filter : '';
+	var filter_const = filter;
+	var state_data = statename;
+   
+    $(selector).owlCarousel({
+        items : 3,
+        itemsDesktop : [1199,3],
+        itemsDesktopSmall : [980,3],
+        itemsTablet: [768,2],
+        itemsTabletSmall: false,
+        itemsMobile : [479,1],
+        autoPlay:true,
+        stopOnHover: true,
+        pagination: true,
+        navigation : true,
+        navigationText : ['<i class="arrow left"></i>','<i class="arrow right"></i>'],
+        jsonPath : datasource,
+        jsonSuccess : customDataSuccess1
+    });
+
+    function customDataSuccess1(data) {
+            var cand = "";
+            var statn = statename+"-keycandidate"; 
+            // console.log("Statename:"+statename);
+                for(var j in data[statn]){
+                    var phase = data[statn][j].phase;
+                    var keyconstno = data[statn][j].constno;
+                    var keyconstname = data[statn][j].constname;
+                    var keycandidatename = data[statn][j].candidatename;
+                    var keycandidateparty = data[statn][j].candidateparty
+                    var keycandidateage = data[statn][j].age
+                    var keycandidateedu = data[statn][j].education
+                    var keycandidatenet = data[statn][j].networth
+                    var keyliabilities = data[statn][j].liabilities
+                    var keycriminals = data[statn][j].criminalcases
+
+                    html = '<div class="poll-candidate-items">'
+                    html += '<img src="img/'+statename+"-keycandidates/"+keycandidatename+'.png" alt="">'
+                    html += '<div class="cand-info">'
+                    html += '<h4>'+keycandidatename+'<span class="keycand-age"> ('+keycandidateage+') </span>'+'<span>'+keycandidateparty+'</span></h4>'
+                    html += '<p class="cand-cont">'+keyconstname+'</p>'
+                    html += '<hr>'
+                    html += '<ul class="cand-meta">'
+                    html += '<li>Education <span>'+keycandidateedu+'</span></li>'
+                    html += '<li>Networth <span>'+keycandidatenet+'</span></li>'
+                    // html += '<li>Networth (2016) <span>'+keycandidatenet2016+'</span></li>'
+                    html += '</ul>'
+                    html += '<hr>'
+                    html += '<ul class="cand-meta" >'
+                    html += '<li>liabilities <span>'+keyliabilities+'</span></li>'
+                    html += '<li>Criminal cases <span>'+keycriminals+'</span></li>'
+                    html += '</ul>'
+                    html += '</div>'
+                    html += '</div>'
+
+                    
+                    cand += html
+            }
+            $(selector).html(cand);
+        }
+}
+    </script>
+
+</body>
+</html>
