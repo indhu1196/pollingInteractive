@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assembly Election Dashboard</title>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css">
     <link rel="stylesheet" href="css/style.css"> 
     <link rel="stylesheet" href="css/responsive.css">
@@ -16,95 +15,84 @@
     <div class="tf_wrap pollDash-wrap">
         <header class="dash-header">
             <h2 class="poll-mainhead">Assembly Elections 2022</h2>
-            <ul class="nav nav-pills stFilter">
-                <li class="active"><a class="dashfilters active" value="Uttar Pradesh" data="up" data-toggle="pill" href="#up">Uttar Pradesh</a></li>
-                <li><a class="dashfilters" value="Punjab" data="pb" data-toggle="pill" href="#pb">Punjab</a></li>
-            </ul>
+            <!-- <nav>
+                <button class="dashfilters active" data="wb">West Bengal </button>
+                <button class="dashfilters" data="as">Assam </button>
+                <button class="dashfilters" data="tn">Tamil Nadu</button>
+                <button class="dashfilters" data="kl">Kerala</button>
+                <button class="dashfilters" data="pd">Puducherry</button>
+            </nav> -->
         </header>
-        <div class="tab-content">
-            <div id="up" class="tab-pane fade in active">
-                <div class="split-cand-total">
-                    <section class="turnout-section">
-                        <h2 class="can-watchh2">Total Voter Turnout</span></h2>
-                        <div class="turnout-items">  
-                            <h3 class="statename"> <span class="turnout_statename"></span> <span class="updatedWrap"> Updated <span class="updatedTime"></span> </span> </h3>
-                            <div class="turnout-content">
-                                <div class="battery-chart turnout-2021">
-                                    <div class="bar"><div class="barlevel" style="background-color: #2A80B9;"></div></div><div class="level" style="color: #2A80B9;"></div></div>
-                                    <div class="split-2"><div>Total electorate <span class="statetotalelectorate"></span></div><div><h4>Turnout 2017</h4><div class="battery-chart turnout-2017"><div class="bar"><div class="barlevel" style="background-color:#F59A13;"></div></div><div class="level"></div></div></div></div></div>
-                        </div>
-                    </section>
-                    <section class="const-carousel">
-                        <h2 class="can-watchh2">Key Candidates</span></h2>
-                        <div id="up-pollcarousel"></div>
-                        <!-- <iframe src="keyCand.html" width="100%" height="250px" scrolling="no" frameborder="0"></iframe> -->
-                    </section>
+        <section class="const-carousel">
+        </section>
+        <div class="split-cand-total">
+            <section class="turnout-section">
+                <h2 class="can-watchh2">Total Voter Turnout</span></h2>
+                <div class="turnout-items">  
+                    <h3 class="statename"> <span class="turnout_statename"></span> <span class="updatedWrap"> Updated <span class="updatedTime"></span> </span> </h3>
+                    <div class="turnout-content">
+                        <div class="battery-chart turnout-2021">
+                            <div class="bar"><div class="barlevel" style="background-color: #2A80B9;"></div></div><div class="level" style="color: #2A80B9;"></div></div>
+                            <div class="split-2"><div>Total electorate <span class="statetotalelectorate"></span></div><div><h4>Turnout 2017</h4><div class="battery-chart turnout-2017"><div class="bar"><div class="barlevel" style="background-color:#F59A13;"></div></div><div class="level"></div></div></div></div></div>
                 </div>
-            </div>
-            <div id="pb" class="tab-pane fade">
-                <div class="split-cand-total">
-                    <section class="turnout-section">
-                        <h2 class="can-watchh2">Total Voter Turnout</span></h2>
-                        <div class="turnout-items">  
-                            <h3 class="statename"> <span class="turnout_statename"></span> <span class="updatedWrap"> Updated <span class="updatedTime"></span> </span> </h3>
-                            <div class="turnout-content">
-                                <div class="battery-chart turnout-2021">
-                                    <div class="bar"><div class="barlevel" style="background-color: #2A80B9;"></div></div><div class="level" style="color: #2A80B9;"></div></div>
-                                    <div class="split-2"><div>Total electorate <span class="statetotalelectorate"></span></div><div><h4>Turnout 2017</h4><div class="battery-chart turnout-2017"><div class="bar"><div class="barlevel" style="background-color:#F59A13;"></div></div><div class="level"></div></div></div></div></div>
-                        </div>
-                    </section>
-                    <section class="const-carousel">
-                        <h2 class="can-watchh2">Key Candidates</span></h2>
-                        <div id="pb-pollcarousel"></div>
-                        <!-- <iframe src="keyCand.html" width="100%" height="250px" scrolling="no" frameborder="0"></iframe> -->
-                    </section>
-                </div>
-            </div>
+            </section>
+            <section class="const-carousel">
+                <h2 class="can-watchh2">Key Candidates</span></h2>
+                <div id="poll-carous2"></div>
+                <!-- <iframe src="keyCand.html" width="100%" height="250px" scrolling="no" frameborder="0"></iframe> -->
+            </section>
         </div>
-        
     </div>
 	<script type="text/javascript">
 	var statename_fixed = 'wb';
 	</script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.js"></script>
+    <script src='https://thefederal.com/embed/common-js/underscore-min.js' ></script>
+    <script src='https://thefederal.com/embed/common-js/d3.v4.min.js' ></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src='https://d3js.org/topojson.v2.min.js'></script>
+    <script src='https://thefederal.com/embed/assembly-polling-2021/js/d3-cooltip.0.1.0.min.js'></script>
+    <script src="https://thefederal.com/embed/assembly-polling-2021/js/map.js"></script>
+    <script src="https://thefederal.com/embed/assembly-polling-2021/js/owl.carousel.js"></script>
+    <!-- <script src="https://thefederal.com/embed/assembly-polling-2021/js/d3-parliament.js"></script> -->
+    <!-- <script src="https://thefederal.com/embed/assembly-polling-2021/js/charts/poll-carousel.js?v=516589"></script> -->
+    <!-- <script src="https://huynhhuynh.github.io/owlcarousel2-filter/dist/owlcarousel2-filter.min.js"></script> -->
+    <!-- <script src="https://thefederal.com/embed/assembly-polling-2021/js/charts/filter.js?v=1825662367"></script> -->
     <script type="text/javascript">
-        pollcarouselWidget('keycandidate-data.json', "#up-pollcarousel", "","up")
-        pollcarouselWidget('keycandidate-data.json', "#pb-pollcarousel", "","pb")
+        pollcarouselWidget('keycandidate-data.json', "#poll-carous2", "","up")
+
+        jQuery("nav button.dashfilters").click(function() {
+            $('nav button').removeClass('active');
+            $(this).addClass('active');
+        })
 
         jQuery(document).ready(function(){
             var body = document.body, html = document.documentElement;
 
             var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight)
-            // console.log("Content Height:"+height);
-            pollData("#up", 0);
-            pollData("#pb", 3);
-            
-            function pollData(selector, index) {
-                var up_poll = null;
-                var tot_percent = (function () {
-                    $.ajax({
-                    'async': false,
-                    'global': false, 
-                    'url': 'https://script.google.com/macros/s/AKfycbwuZTbrkY9YhXQFu66AAPlHkvvWyk2Z5RY1-4XksuOWahQZsQBg8FoVIhVB_r_K9JKSIg/exec',
-                    'dataType' : 'json',
-                    'success': function (data) {
-                        up_poll = data["content"]["pollingData"];  
-                        console.log(up_poll);                    
-                    }
-                    });
-                    return up_poll;
-                })();
+            console.log("Content Height:"+height);
+            var up_poll = null;
+            var tot_percent = (function () {
+                $.ajax({
+                'async': false,
+                'global': false, 
+                'url': 'https://script.google.com/macros/s/AKfycbwuZTbrkY9YhXQFu66AAPlHkvvWyk2Z5RY1-4XksuOWahQZsQBg8FoVIhVB_r_K9JKSIg/exec',
+                'dataType' : 'json',
+                'success': function (data) {
+                    up_poll = data["content"]["pollingData"];  
+                    console.log(up_poll[0]["timeUpdated"]);                    
+                }
+                });
+                return up_poll;
+            })();
 
-                $(selector + " .turnout_statename").text(up_poll[index]["statename"])
-                $(selector + " .turnout-2021 .barlevel").css("width", up_poll[index]["pollingPercent"]+"%")
-                $(selector + " .turnout-2017 .barlevel").css("width", up_poll[index]["turnout2017"]+"%")
-                $(selector + " .turnout-2021 .level").text(up_poll[index]["pollingPercent"]+"%")
-                $(selector + " .turnout-2017 .level").text(up_poll[index]["turnout2017"]+"%")
-                $(selector + " .statetotalelectorate").text((up_poll[index]["totalelectorate"]).toLocaleString('en-IN'))
-                $(selector + " .updatedTime").text(up_poll[index]["timeUpdated"])
-            }
+            $(".turnout_statename").text(up_poll[0]["statename"])
+            $(".turnout-2021 .barlevel").css("width", up_poll[0]["pollingPercent"]+"%")
+            $(".turnout-2017 .barlevel").css("width", up_poll[0]["turnout2017"]+"%")
+            $(".turnout-2021 .level").text(up_poll[0]["pollingPercent"]+"%")
+            $(".turnout-2017 .level").text(up_poll[0]["turnout2017"]+"%")
+            $(".statetotalelectorate").text((up_poll[0]["totalelectorate"]).toLocaleString('en-IN'))
+            $(".updatedTime").text(up_poll[0]["timeUpdated"])
         })
 
         
@@ -115,15 +103,13 @@ function pollcarouselWidget(datasource, selector, filter = '', statename){
 	var filter_const = filter;
 	var state_data = statename;
    
-    $(selector).owlCarousel({
-        items : 3,
+    $("#poll-carous2").owlCarousel({
+        items: 3,
         itemsDesktop : [1199,3],
         itemsDesktopSmall : [980,3],
         itemsTablet: [768,2],
         itemsTabletSmall: false,
         itemsMobile : [479,1],
-        autoPlay:true,
-        stopOnHover: true,
         pagination: true,
         navigation : true,
         navigationText : ['<i class="arrow left"></i>','<i class="arrow right"></i>'],
@@ -134,8 +120,9 @@ function pollcarouselWidget(datasource, selector, filter = '', statename){
     function customDataSuccess1(data) {
             var cand = "";
             var statn = statename+"-keycandidate"; 
-            // console.log("Statename:"+statename);
+            console.log("Statename:"+statename);
                 for(var j in data[statn]){
+                    
                     var phase = data[statn][j].phase;
                     var keyconstno = data[statn][j].constno;
                     var keyconstname = data[statn][j].constname;
@@ -169,7 +156,7 @@ function pollcarouselWidget(datasource, selector, filter = '', statename){
                     
                     cand += html
             }
-            $(selector).html(cand);
+            $("#poll-carous2").html(cand);
         }
 }
     </script>
